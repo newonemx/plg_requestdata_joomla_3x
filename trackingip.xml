@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="user" method="upgrade">
+    <name>Log-in - Registro de ip en inicio de sesion</name>
+    <author>Team Zitred</author>
+    <creationDate>Feb 20, 2020</creationDate>
+    <copyright></copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <authorEmail>eduardo.ortiz@zitred.com</authorEmail>
+    <authorUrl></authorUrl>
+    <version>1.0.1</version>
+    <description>plugin para guardar la IP Remota  al iniciar sesión</description>
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <files>
+        <filename plugin="trackingip">trackingip.php</filename>
+        <folder>models</folder>
+        <folder>tables</folder>
+        <folder>sql</folder>
+    </files>
+</extension>
